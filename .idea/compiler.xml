@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="securityOauth2-eureka" />
+        <module name="securityOauth2-gateway" />
+        <module name="securityOauth2-resource1" />
+        <module name="securityOauth2-uaa2" />
+        <module name="securityOauth2uaa" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="securityOauth2-eureka" options="-parameters" />
+      <module name="securityOauth2-gateway" options="-parameters" />
+      <module name="securityOauth2-resource1" options="-parameters" />
+      <module name="securityOauth2-uaa2" options="-parameters" />
+      <module name="securityOauth2uaa" options="-parameters" />
+    </option>
+  </component>
+</project>

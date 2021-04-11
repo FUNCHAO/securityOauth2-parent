@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS `oauth_code`;
+CREATE TABLE `oauth_code` ( 
+`create_time` TIMESTAMP(0) NOT NULL DEFAULT CURRENT_TIMESTAMP, 
+`code` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+ `authentication` BLOB NULL, INDEX `code_index`(`code`) 
+ USING BTREE 
+ )
+  ENGINE = INNODB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = COMPACT;
